@@ -16,6 +16,20 @@ layout: default
   {{ content }}
 </div>
 
+<!-- Categories -->
+<div>
+  {% if page.categories.size > 0 %}
+    Categorized under:
+  {% endif %}
+  {% for category in page.categories %}
+    {% if forloop.last %}
+      <a href="/categories#{{ category }}">{{ category }}</a>
+    {% else %}
+      <a href="/categories#{{ category }}">{{ category }}</a>, 
+    {% endif %}
+  {% endfor %}
+</div>
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
