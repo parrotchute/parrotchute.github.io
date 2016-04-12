@@ -15,6 +15,7 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
   <!-- Categories -->
+  <p>
   {% if page.categories.size > 0 %}
     Categorized under:
   {% endif %}
@@ -25,6 +26,7 @@ layout: default
       <a href="/categories#{{ category }}">{{ category }}</a>, 
     {% endif %}
   {% endfor %}
+  </p>
 </div>
 
 <div class="related">
