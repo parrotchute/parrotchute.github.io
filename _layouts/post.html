@@ -14,8 +14,10 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
+</div>
+
+<div>
   <!-- Categories -->
-  <p>
   {% if page.categories.size > 0 %}
     Categorized under:
   {% endif %}
@@ -26,7 +28,6 @@ layout: default
       <a href="/categories#{{ category }}">{{ category }}</a>, 
     {% endif %}
   {% endfor %}
-  </p>
 </div>
 
 <div class="related">
