@@ -33,7 +33,7 @@ to the `site_tags` variable. -->
           <a href="{{ post.url }}">{{ post.title }}</a>
           <!-- Tags -->
           {% for tag in post.tags %}
-            <a class="tag-mark tag-mark" href="/tags#{{ tag }}">{{ tag }}</a>
+            <a class="tag-mark tag-mark-small" href="/tags#{{ tag }}">{{ tag }}</a>
           {% endfor %}
         </span>
         <span style="float: right;">
