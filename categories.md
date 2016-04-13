@@ -14,16 +14,13 @@ to the `site_categories` variable. -->
 <!-- Build the Page -->
 
 <!-- List of all categories -->
-<ul class="categories">
+<div>
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ category_words[item] }}{% endcapture %}
-    <li>
-      <a href="#{{ this_word | cgi_escape }}" class="category">{{ this_word }}
-        <span>({{ site.categories[this_word].size }})</span>
-      </a>
-    </li>
+    <a class="category-mark" href="#{{ this_word | cgi_escape }}">{{ this_word }} 
+    ({{ site.categories[this_word].size }})</a>
   {% endunless %}{% endfor %}
-</ul>
+</div>
 
 <!-- Posts by category -->
 <div>
@@ -34,6 +31,10 @@ to the `site_categories` variable. -->
       <div>
         <span style="float: left;">
           <a href="{{ post.url }}">{{ post.title }}</a>
+          <!-- Tags -->
+          {% for tag in post.tags %}
+            <a class="tag-mark tag-mark-small" href="/tags#{{ tag }}">{{ tag }}</a>
+          {% endfor %}
         </span>
         <span style="float: right;">
           {{ post.date | date_to_string }}

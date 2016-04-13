@@ -14,16 +14,13 @@ to the `site_tags` variable. -->
 <!-- Build the Page -->
 
 <!-- List of all tags -->
-<ul class="tags">
+<div>
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <li>
-      <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
-        <span>({{ site.tags[this_word].size }})</span>
-      </a>
-    </li>
+    <a class="tag-mark" href="#{{ this_word | cgi_escape }}">{{ this_word }} 
+    ({{ site.tags[this_word].size }})</a>
   {% endunless %}{% endfor %}
-</ul>
+</div>
 
 <!-- Posts by Tag -->
 <div>
@@ -34,6 +31,10 @@ to the `site_tags` variable. -->
       <div>
         <span style="float: left;">
           <a href="{{ post.url }}">{{ post.title }}</a>
+          <!-- Tags -->
+          {% for tag in post.tags %}
+            <a class="tag-mark tag-mark" href="/tags#{{ tag }}">{{ tag }}</a>
+          {% endfor %}
         </span>
         <span style="float: right;">
           {{ post.date | date_to_string }}
