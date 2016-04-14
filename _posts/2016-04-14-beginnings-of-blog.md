@@ -10,7 +10,7 @@ The reasons I have for creating a blog/site are numerous:
 
 * I wanted to dive in and tinker around with code
 * It's a great way to showcase myself or my work to a prospective employer as it's going to double up as both a blog and a landing page site which links to ~~future~~ development projects I might engross myself in
-* I'm able to pen down my thoughts, helping me process though through them more carefully
+* I'm able to pen down my thoughts, helping me process through them more carefully
 * Writing down solutions for problems I've encountered means I don't need to remember them since I can always refer back to these posts if I need a refresher. It may help others who have encountered the same issues too
 * There's the prospect of monetizing the site and earning a side income from it (I wish)
 * Also, my writing sucks so it'll be good practice (I'm more of a technical writer) 
