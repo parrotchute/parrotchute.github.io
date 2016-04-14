@@ -15,6 +15,6 @@ The reasons I have for creating a blog/site are numerous:
 * There's the prospect of monetizing the site and earning a side income from it (I wish)
 * Also, my writing sucks so it'll be good practice (I'm more of a technical writer) 
 
-Currently, I have a couple of ideas of what I plan to post, but they are still just vague ideas in my mind. The blog will probably be split into a couple of different themes/topics. Part of it would be IT/coding, part of it would be life within the Singapore context, as that's the country I grew up in, and am still living in.
+Currently, I have a couple of ideas of what I plan to post, but they are still just vague ideas in my mind. The blog will probably be split into a couple of different themes/topics. Part of it will be IT/coding, part of it will be life within the Singapore context, as that's the country I grew up in, and am still living in. Or I can just let it shape itself based on what I feel like posting.
 
-I do hope that those who end up reading any of my posts are able to benefit out of it as much as I did when writing them! :)
+With all that aside, I do hope that those who read my posts are able to benefit out of it as much as I did when writing them! :)
