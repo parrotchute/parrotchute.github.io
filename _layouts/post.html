@@ -5,7 +5,8 @@ layout: default
 <!-- Title and Date -->
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }} | 
+  <span class="post-date">{{ page.date | date_to_string }}
+  {% if page.tags.size > 0 %} | {% endif %}
   {% for tag in page.tags %}
     <a class="tag-mark tag-mark-small" href="/tags#{{ tag }}">{{ tag }}</a>
   {% endfor %}
