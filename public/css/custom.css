@@ -5,6 +5,10 @@ img {
     margin: 0 auto;
 }
 
+.g-comments-css {
+    text-align: center;
+}
+
 /*Tags*/
 .tag-mark{
     padding: 0 .5rem 0 .5rem;

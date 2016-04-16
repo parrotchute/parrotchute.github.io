@@ -10,7 +10,6 @@ permalink:        /blog/:title/
 title:            Catputer
 tagline:          'Random musings'
 description:      'A place on the internet where I pen my <s>generic</s> thoughts'
-url:              http://lanyon.getpoole.com
 
 author:
   name:           'Catputer'
