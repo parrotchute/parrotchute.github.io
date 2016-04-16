@@ -14,7 +14,7 @@ layout: default
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}
-    {% if page.tags.size > 0 %} | {% endif %}
+    {% if post.tags.size > 0 %} | {% endif %}
     {% for tag in post.tags %}
       <a class="tag-mark tag-mark-small" href="/tags#{{ tag }}">{{ tag }}</a>
     {% endfor %}
