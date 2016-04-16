@@ -6,8 +6,9 @@ img {
 }
 
 .g-comments-css {
-    width: 100%;
-    text-align: center;
+    width: 100% !important;
+    /*text-align: center;*/
+    margin: 0 auto;
 }
 
 /*Tags*/
