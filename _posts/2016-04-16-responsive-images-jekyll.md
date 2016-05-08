@@ -20,7 +20,7 @@ That is all you need. `margin: 0 auto;` can also be added to center images. If l
 
 The above snippet also Bootstrap's way of making responsive images, except that Bootstrap has it in a `img-responsive` class instead. The difference between both approaches is that with Bootstrap's way, the `img-responsive` class has to be applied manually to all images, while the other is already applied to all images automatically. The second approach is much better in Jekyll, as you do not have to include HTML syntax within Markdown/Kramdown just to insert a class.
 
-For those who downloaded Lanyon from [here](http://lanyon.getpoole.com/), it is a very outdated version that does not have responsive images and has this in `public\css\poole.css`:
+For those who downloaded Lanyon from [here](http://lanyon.getpoole.com/), it is a very outdated version that does not have responsive images and has this in `\public\css\poole.css`:
 
 ```css
 img {
@@ -33,7 +33,7 @@ img {
 If minimal edits is what you want, all you need to do is to include `max-width: 100%;` and be done with it. Alternatively, you can head over to their [repository](https://github.com/poole/lanyon) and download all the latest CSS versions.
 
 
-To include auto centering of the images, I created a `public\css\poole.css` and inserted this:
+To include auto centering of the images, I created a `\public\css\poole.css` and inserted this:
 
 ```css
 img {
@@ -41,7 +41,7 @@ img {
 }
 ```
 
-And then linked to the new stylesheet in `_includes\head.html`, applying it to all pages:
+And then linked to the new stylesheet in `\_includes\head.html`, applying it to all pages:
 
 ```html
 <link rel="stylesheet" href="/public/css/custom.css"/>
